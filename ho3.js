@@ -1,4 +1,4 @@
-(function() {
+    (function() {
 const canvas = document.getElementById("c1");
 const context = canvas.getContext("2d");
 
@@ -486,6 +486,20 @@ let map =  [
 if(game.hero.y+game.hero.height>game.enemy.y && game.hero.x + game.hero.width>=game.enemy.x && game.hero.x<game.enemy.x+game.enemy.width && game.hero.oldy<game.hero.y ){
 //alert("GAME OVER "+" "+" Click OK to restart"); \
 
+
+
+
+game.enemy.height = 10;
+
+game.enemy.y+=7;
+
+game.enemy.xDelta =0;
+setTimeout(function(){;
+
+game.enemy.x=1000;	
+},500)
+
+
 let soundFlag = true;
 
                 if (soundFlag){
@@ -496,15 +510,6 @@ let soundFlag = true;
                 }
 
 
-game.enemy.height = 10;
-
-game.enemy.y+=7;
-	game.enemy.xDelta =0;
-
-setTimeout(function(){;
-
-game.enemy.x=1000;	
-},500)
 }
   			game.enemy.x += game.enemy.xDelta;
 
@@ -966,8 +971,7 @@ game.enemy.x=1000;
         game.plant3.y=313;
         game.plant3.yDelta = 0;
         game.enemy.height = 30;
-	      
-	      game.enemy.xDelta =1;
+        game.enemy.xDelta =1;
 
         
 
@@ -1093,7 +1097,8 @@ game.enemy.x=1000;
         game.plant.x = 710;
         game.plant.height = 35;
         game.enemy.height = 30;
-	game.enemy.xDelta =1;			
+        game.enemy.xDelta =1;
+        
 
 
       	grass.src ="https://scontent.fevn2-1.fna.fbcdn.net/v/t1.15752-9/47149148_978659052329141_6978225926374948864_n.png?_nc_cat=103&_nc_ht=scontent.fevn2-1.fna&oh=fd3ecb86540f8b833fd14469638d403a&oe=5C6DCDE2";
@@ -1237,7 +1242,7 @@ game.enemy.x=1000;
 
         game.plant.height = 40;
         game.enemy.height = 30;
-	game.enemy.xDelta =1;
+        game.enemy.xDelta =1;
 
       	grass.src ="https://scontent.fevn2-1.fna.fbcdn.net/v/t1.15752-9/47462608_564456630665731_2385072382592155648_n.png?_nc_cat=111&_nc_ht=scontent.fevn2-1.fna&oh=8101ea3c4399777a79f776cfcf9f5dea&oe=5C9E28EA";
       	stone.src = "https://scontent.fevn2-1.fna.fbcdn.net/v/t1.15752-9/47210063_362345261192725_1361694990077526016_n.png?_nc_cat=109&_nc_ht=scontent.fevn2-1.fna&oh=c80f3a01a16725606a1ff34daaed8c1d&oe=5C68B4C2";
@@ -1362,8 +1367,8 @@ game.enemy.x=1000;
         borderBottom = 548;
         borderTop = 100;
 
-        game.enemy.y = 272;
-        game.enemy.x = 201;
+        //game.enemy.y = 272;
+        //game.enemy.x = 201;
         game.plant.yDelta = 4;
         game.plant2.yDelta = 4;
         game.plant3.yDelta = 4;
@@ -1390,7 +1395,7 @@ game.enemy.x=1000;
         game.enemy.y = 420;
         game.enemy.x = 401;
         game.enemy.height = 30;
-	game.enemy.xDelta =1;
+        game.enemy.xDelta =1;
 
         grass.src ="https://scontent.fevn2-1.fna.fbcdn.net/v/t1.15752-9/47381845_2294175037494346_3704098204023783424_n.png?_nc_cat=100&_nc_ht=scontent.fevn2-1.fna&oh=8f79098a097c6256e7f1f60df0c0de0d&oe=5CAA62B9";
         stone.src = "https://scontent.fevn2-1.fna.fbcdn.net/v/t1.15752-9/47320433_517916745376505_7496223570960318464_n.png?_nc_cat=104&_nc_ht=scontent.fevn2-1.fna&oh=4b4756ffb4021b3c906090b4002bd3f6&oe=5C71733A";
@@ -1529,8 +1534,7 @@ game.enemy.x=1000;
 
         game.enemy.y = 420;
         game.enemy.x = 1500;
-        game.enemy.height = 30;
-		    game.enemy.xDelta =1;
+       
 
         grass.src ="https://scontent.fevn2-1.fna.fbcdn.net/v/t1.15752-9/47381845_2294175037494346_3704098204023783424_n.png?_nc_cat=100&_nc_ht=scontent.fevn2-1.fna&oh=8f79098a097c6256e7f1f60df0c0de0d&oe=5CAA62B9";
         stone.src = "https://scontent.fevn2-1.fna.fbcdn.net/v/t1.15752-9/47320433_517916745376505_7496223570960318464_n.png?_nc_cat=104&_nc_ht=scontent.fevn2-1.fna&oh=4b4756ffb4021b3c906090b4002bd3f6&oe=5C71733A";
