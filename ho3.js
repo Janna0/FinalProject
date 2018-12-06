@@ -500,8 +500,10 @@ game.enemy.height = 10;
 
 game.enemy.y+=7;
 
+setTimeout(function(){;
 
-game.enemy.x=1000;
+game.enemy.x=1000;	
+},500)
 }
   			game.enemy.x += game.enemy.xDelta;
 
